@@ -4,7 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
+
+    <script defer src="/js/script.js"></script>
+
     <title>travel Agency</title>
   </head>
-  <body></body>
+  <body>
+    <div class="site-container">
+      <!-- HEADER -->
+      <header>
+        <div class="header-left">travel Agency</div>
+        <div class="header-right">
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Flights</a></li>
+              <li><a href="#">Rentals</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="toggle" id="bars">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+          <div class="toggle hidden" id="close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+        </div>
+      </header>
+      <!-- SEARCH -->
+      <section class="search-container">
+        <h2>Where do you want to go...</h2>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Type here..."
+        />
+      </section>
+      <!-- CARDS -->
+      <section class="cards-container">
+        <div class="card">
+          <div class="icon"><i class="fas fa-plane"></i></div>
+          <h3>Book a Plane Here</h3>
+          <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+            sapiente.
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fas fa-ship"></i></div>
+          <h3>Book a Boat</h3>
+          <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+            sapiente.
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon"><i class="fas fa-train"></i></div>
+          <h3>Book a Train</h3>
+          <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+            sapiente.
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
