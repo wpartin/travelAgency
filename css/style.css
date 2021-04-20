@@ -2,6 +2,7 @@
 
 :root {
   --ming: #006d77ff;
+  --ming75: rgba(0, 109, 119, 0.75);
   --middle-blue-green: #83c5beff;
   --alice-blue: #edf6f9ff;
   --unbleached-silk: #ffddd2ff;
@@ -20,4 +21,93 @@ body {
   font-family: "Heebo", sans-serif;
   color: var(--alice-blue);
   background-color: var(--unbleached-silk);
+}
+
+.site-container {
+  background: url(/img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 50px;
+  font-size: 85%;
+  background-color: var(--ming75);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+  margin-bottom: 65vh;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-left: 2em;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--alice-blue);
+}
+
+/* SEARCH */
+
+.search-container {
+  width: 100%;
+  height: 200px;
+  background-color: var(--middle-blue-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#search {
+  width: 400px;
+  height: 30px;
+}
+
+/* CARDS CONTAINER */
+
+.cards-container {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-salmon);
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 5rem;
+  border: 1px solid #fff;
+}
+
+.icon {
+  font-size: 250%;
+}
+
+.icon,
+.card h3,
+.text {
+  margin-bottom: 1em;
+}
+
+/* HIDDEN -- KEEP AT BOTTOM */
+.hidden {
+  display: none;
 }
