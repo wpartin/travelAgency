@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  --ming: #006d77ff;
+  --middle-blue-green: #83c5beff;
+  --alice-blue: #edf6f9ff;
+  --unbleached-silk: #ffddd2ff;
+  --dark-salmon: #e29578ff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,4 +18,6 @@ html,
 body {
   font-size: 18px;
   font-family: "Heebo", sans-serif;
+  color: var(--alice-blue);
+  background-color: var(--unbleached-silk);
 }
